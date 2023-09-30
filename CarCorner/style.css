@@ -1,0 +1,144 @@
+*{
+margin: 0;
+padding: 0;
+}
+body{
+font-family: Arial, Helvetica, sans-serif;
+
+}
+nav{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.288);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.custom-toggler.navbar-toggler {
+    border: none;
+    color: transparent;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+.grid{
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card{
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 0px;
+    background-color: rgb(255, 255, 255);
+}
+.card-info{
+    background-color: #212529;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+h3{
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:1000px){
+.grid{
+   display: grid;
+   flex-wrap: wrap;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 10px;
+}
+}
+@media screen and (max-width:700px){
+.card{
+  max-width: 300px;
+}
+.grid{
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0px;
+}
+}
+.desc > button{
+background-color: white;
+color: black;
+padding: 7px;
+width: 100%;
+border: none;
+border-radius: 10px;
+}
+.desc > button:hover{
+background-color: #848291;
+color: white;
+cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  background-color: rgb(114, 114, 114);
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 5px;
+}
+
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  justify-content: space-between;
+  max-width: 500px; 
+  margin: 15px auto;
+  
+}
+li{
+  width: 50%; 
+  margin-bottom: 10px;
+}
+.warnings{
+  text-align: center;
+  max-width: 100%;
+  color: white;
+  background-color: #212529;
+  padding: 9px;
+}
